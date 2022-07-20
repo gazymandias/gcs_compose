@@ -10,4 +10,4 @@ https://cloud.google.com/community/tutorials/cloud-storage-infinite-compose
 
 By default compose is limited to 32 objects in a single operation. Here we use multiple accumulators across the composite objects, accumulating the accumulators until you get to one. This forms a tree-like structure of accumulators:
 
-![](compose_accumulator_tree.svg)
+![](/compose_accumulator_tree.svg "Accumulator Tree")
