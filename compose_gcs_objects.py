@@ -176,7 +176,7 @@ def compose_gcs_objects(
             slices = list(blobs)
             if slices:
                 log.debug(f"composing {prefix} {slices}")
-                blob_to_compose = f"gs://{bucket}/{output_dir}/{input_top_level_folder}/{prefix.strip('/')}.data"
+                blob_to_compose = f"gs://{bucket}/{output_dir}/{prefix.strip('/')}.data"
                 compose(object_path=blob_to_compose, slices=slices, client=client, executor=executor)
             else:
                 log.warning(f"theres nothing here to compose")
